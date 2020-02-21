@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pixel Art by Ionut Iancu</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+
+      <header>
+          <div class="header header__box spacer__large">
+            <h1 class="header__h2 font-bold">Pxel<span class="font-light"> color maker</span>  </h1>
+          </div>
+      </header>
+      <section class="style">
+            <div class="style__box spacer__large">
+
+              <div class="style__head spacer__large">
+                <h4 class="text-primary font-bold">Get  <span class="font-light">your style</span></h4>
+                <form class="size-picker">
+                  <input type="number" class="input-height" name="height" min="1" max="32" value="8">
+                  <input type="number" class="input-width" name="width" min="1" max="32" value="8">
+                  <input type="submit" class="submit-button style__btn" value="Resize">
+                </form>
+
+                <div class="style__head">
+                  <input id="pick" type="color" class="color-picker style__head-picker" value="#6aa5b8">
+                  <label for="pick" class="style__btn">
+                    Pick a color
+                  </label>
+                </div>
+                <button id="export" class="style__btn">Save art</button>
+
+              </div>
+
+              <div class="style__bottom">
+                  <div>
+                    <h4 class="text-primary font-bold text-center mb-2">Be <span class="font-light">an artist!</span></h4>
+                    <table id="preview-table" class="pixel-canvas"></table>
+                  </div>
+              </div>
+
+            </div>
+
+          
+      </section>
+      
+
+
+</main>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="lib/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="lib/html2canvas.js"></script>
+<script type="text/javascript" src="lib/canvas.js"></script>
+
+</body>
+</html>
